@@ -1,0 +1,237 @@
+import React, { useState } from 'react';
+import VideoCard from './components/VideoCard';
+import VideoModal from './components/VideoModal';
+import TournamentsPage from './components/TournamentsPage';
+import WorldRankingPage from './components/WorldRankingPage';
+import './styles/App.css';
+import logoImage from './Assets/Main Logo/major-highlights-logo.png';
+import vitVsMonThumbnail from './Assets/VS/vit-vs-mon.png';
+import painVsMonThumbnail from './Assets/VS/pain-vs-mon.png';
+import vitVsMouzThumbnail from './Assets/VS/vit-vs-mouz.png';
+import monVsFazeThumbnail from './Assets/VS/mon-vs-faze.png';
+import vitVsNaviThumbnail from './Assets/VS/vit-vs-navi.png';
+import spiritVsMouzThumbnail from './Assets/VS/spirit-vs-mouz.png';
+import painVsFuriaThumbnail from './Assets/VS/pain-vs-furia.png';
+
+const finalsVideos = [
+  {
+    id: 1,
+    title: "Vitality VS The Mongolz",
+    thumbnail: vitVsMonThumbnail,
+    youtubeId: "2GeYxpuibiE",
+    teams: ["Vitality", "The Mongolz"],
+    duration: "2:34",
+    tournament: "IEM Katowice",
+    description: "Incredible 1v3 clutch on Ancient"
+  }
+];
+
+const semiFinalsVideos = [
+  {
+    id: 2,
+    title: "The Mongolz VS Pain",
+    thumbnail: painVsMonThumbnail,
+    youtubeId: "eyL5eSv8_6E",
+    teams: ["The Mongolz", "Pain"],
+    duration: "3:15",
+    tournament: "BLAST Premier",
+    description: "Amazing clutch round"
+  },
+  {
+    id: 3,
+    title: "MOUZ VS Vitality",
+    thumbnail: vitVsMouzThumbnail,
+    youtubeId: "lCzF89U_hUw",
+    teams: ["MOUZ", "Vitality"],
+    duration: "3:15",
+    tournament: "BLAST Premier",
+    description: "Amazing clutch round"
+  }
+];
+
+const quarterFinalsVideos = [
+  {
+    id: 4,
+    title: "The Mongolz VS FaZe",
+    thumbnail: monVsFazeThumbnail,
+    youtubeId: "3NQG3fgddnk",
+    teams: ["The Mongolz", "FaZe"],
+    duration: "4:22",
+    tournament: "ESL Pro League",
+    description: "Epic comeback"
+  },
+  {
+    id: 5,
+    title: "NAVI VS G2",
+    thumbnail: vitVsNaviThumbnail,
+    youtubeId: "SkmPSdhClww",
+    teams: ["NAVI", "G2"],
+    duration: "4:22",
+    tournament: "ESL Pro League",
+    description: "Epic comeback"
+  }
+];
+
+const playoffsVideos = [
+  {
+    id: 6,
+    title: "Spirit VS MOUZ",
+    thumbnail: spiritVsMouzThumbnail,
+    youtubeId: "FpKGsAGwC9E",
+    teams: ["Spirit", "MOUZ"],
+    duration: "5:10",
+    tournament: "IEM Cologne",
+    description: "Insane clutch moments"
+  },
+  {
+    id: 7,
+    title: "FURIA VS Pain",
+    thumbnail: painVsFuriaThumbnail,
+    youtubeId: "hbs-sn7x0v0",
+    teams: ["FURIA", "Pain"],
+    duration: "5:10",
+    tournament: "IEM Cologne",
+    description: "Insane clutch moments"
+  }
+];
+
+function App() {
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState('home');
+  const [visibleSections, setVisibleSections] = useState({
+    finals: true,
+    semiFinals: true,
+    quarterFinals: true,
+    playoffs: true
+  });
+
+  const handleNavigation = (page) => {
+    setCurrentPage(page);
+    setIsMenuOpen(false);
+  };
+
+  const toggleSection = (section) => {
+    setVisibleSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
+
+  return (
+    <div className="app">
+      <header className="header">
+        <nav className="nav">
+          <div className="logo" onClick={() => window.location.reload()}>
+            <img src={logoImage} alt="Major Highlights" className="logo-image" />
+          </div>
+          <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul className={`nav-links mobile ${isMenuOpen ? 'open' : ''}`}>
+            <li><a href="#home" onClick={() => handleNavigation('home')}>Home</a></li>
+            <li><a href="#tournaments" onClick={() => handleNavigation('tournaments')}>Tournaments</a></li>
+            <li><a href="#world-ranking" onClick={() => handleNavigation('world-ranking')}>World Ranking</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main className="main">
+        {currentPage === 'home' && (
+          <div className="date-sections">
+            <div className="date-section">
+              <div className="date-header">
+                <span className="date-button" onClick={() => toggleSection('finals')}>AUSTIN // FINALS</span>
+              </div>
+              {visibleSections.finals && (
+                <div className="video-grid">
+                  {finalsVideos.map(video => (
+                    <VideoCard
+                      key={video.id}
+                      video={video}
+                      onClick={setSelectedVideo}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="date-section">
+              <div className="date-header">
+                <span className="date-button" onClick={() => toggleSection('semiFinals')}>AUSTIN // SEMI FINALS</span>
+              </div>
+              {visibleSections.semiFinals && (
+                <div className="video-grid">
+                  {semiFinalsVideos.map(video => (
+                    <VideoCard
+                      key={video.id}
+                      video={video}
+                      onClick={setSelectedVideo}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="date-section">
+              <div className="date-header">
+                <span className="date-button" onClick={() => toggleSection('quarterFinals')}>AUSTIN // QUARTER FINALS</span>
+              </div>
+              {visibleSections.quarterFinals && (
+                <div className="video-grid">
+                  {quarterFinalsVideos.map(video => (
+                    <VideoCard
+                      key={video.id}
+                      video={video}
+                      onClick={setSelectedVideo}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="date-section">
+              <div className="date-header">
+                <span className="date-button" onClick={() => toggleSection('playoffs')}>AUSTIN // PLAYOFFS</span>
+              </div>
+              {visibleSections.playoffs && (
+                <div className="video-grid">
+                  {playoffsVideos.map(video => (
+                    <VideoCard
+                      key={video.id}
+                      video={video}
+                      onClick={setSelectedVideo}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+        
+        {currentPage === 'tournaments' && (
+          <TournamentsPage />
+        )}
+        
+        {currentPage === 'world-ranking' && (
+          <WorldRankingPage />
+        )}
+        
+        <hr className="footer-separator" />
+        <div className="footer-contact">
+          <p>@MHGG</p>
+          <p>MAJOR.HIGHLIGHTS@GMAIL.COM</p>
+        </div>
+      </main>
+
+      <VideoModal
+        video={selectedVideo}
+        onClose={() => setSelectedVideo(null)}
+      />
+    </div>
+  );
+}
+
+export default App;
