@@ -47,10 +47,10 @@ const VideoModal = ({ video, onClose }) => {
         <iframe
           width="800"
           height="450"
-          src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&enablejsapi=1`}
+          src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&playsinline=1&enablejsapi=1`}
           title={video.title}
           frameBorder="0"
-          allow="autoplay; encrypted-media"
+          allow="autoplay; encrypted-media; fullscreen"
           allowFullScreen
         />
       </div>
