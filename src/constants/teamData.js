@@ -3,7 +3,7 @@ import vitalityLogo from '../Assets/team-logo/vitality-logo.png';
 import mouzLogo from '../Assets/team-logo/mouz-logo.png';
 import mongolzLogo from '../Assets/team-logo/mongolz-logo.png';
 import spiritLogo from '../Assets/team-logo/spirit-logo.png';
-import spiritDarkLogo from '../Assets/team-logo/spirit-logo-dark.png';
+import spiritDarkLogo from '../Assets/team-logo/spirit-dark-logo.png';
 import auroraLogo from '../Assets/team-logo/aurora-logo.png';
 import falconsLogo from '../Assets/team-logo/falcons-logo.png';
 import fazeLogo from '../Assets/team-logo/faze-logo.png';
