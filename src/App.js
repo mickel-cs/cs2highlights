@@ -141,73 +141,31 @@ function App() {
       <main className="main">
         {currentPage === 'home' && (
           <div className="date-sections">
-            <div className="date-section">
-              <div className="date-header">
-                <span className="date-button" onClick={() => toggleSection('finals')}>AUSTIN // FINALS</span>
-              </div>
-              {visibleSections.finals && (
-                <div className="video-grid">
-                  {finalsVideos.map(video => (
-                    <VideoCard
-                      key={video.id}
-                      video={video}
-                      onClick={setSelectedVideo}
-                    />
-                  ))}
+            {[
+              { key: 'finals', title: 'AUSTIN // FINALS', videos: finalsVideos },
+              { key: 'semiFinals', title: 'AUSTIN // SEMI FINALS', videos: semiFinalsVideos },
+              { key: 'quarterFinals', title: 'AUSTIN // QUARTER FINALS', videos: quarterFinalsVideos },
+              { key: 'playoffs', title: 'AUSTIN // PLAYOFFS', videos: playoffsVideos }
+            ].map(section => (
+              <div key={section.key} className="date-section">
+                <div className="date-header">
+                  <span className="date-button" onClick={() => toggleSection(section.key)}>
+                    {section.title}
+                  </span>
                 </div>
-              )}
-            </div>
-
-            <div className="date-section">
-              <div className="date-header">
-                <span className="date-button" onClick={() => toggleSection('semiFinals')}>AUSTIN // SEMI FINALS</span>
+                {visibleSections[section.key] && (
+                  <div className="video-grid">
+                    {section.videos.map(video => (
+                      <VideoCard
+                        key={video.id}
+                        video={video}
+                        onClick={setSelectedVideo}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
-              {visibleSections.semiFinals && (
-                <div className="video-grid">
-                  {semiFinalsVideos.map(video => (
-                    <VideoCard
-                      key={video.id}
-                      video={video}
-                      onClick={setSelectedVideo}
-                    />
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <div className="date-section">
-              <div className="date-header">
-                <span className="date-button" onClick={() => toggleSection('quarterFinals')}>AUSTIN // QUARTER FINALS</span>
-              </div>
-              {visibleSections.quarterFinals && (
-                <div className="video-grid">
-                  {quarterFinalsVideos.map(video => (
-                    <VideoCard
-                      key={video.id}
-                      video={video}
-                      onClick={setSelectedVideo}
-                    />
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <div className="date-section">
-              <div className="date-header">
-                <span className="date-button" onClick={() => toggleSection('playoffs')}>AUSTIN // PLAYOFFS</span>
-              </div>
-              {visibleSections.playoffs && (
-                <div className="video-grid">
-                  {playoffsVideos.map(video => (
-                    <VideoCard
-                      key={video.id}
-                      video={video}
-                      onClick={setSelectedVideo}
-                    />
-                  ))}
-                </div>
-              )}
-            </div>
+            ))}
           </div>
         )}
         

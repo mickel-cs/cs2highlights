@@ -1,33 +1,9 @@
 import React from 'react';
-import naviLogo from '../Assets/team-logo/navi-logo.png';
-import vitalityLogo from '../Assets/team-logo/vitality-logo.png';
-import mouzLogo from '../Assets/team-logo/mouz-logo.png';
-import mongolzLogo from '../Assets/team-logo/mongolz-logo.png';
-import spiritLogo from '../Assets/team-logo/spirit-logo-dark.png';
-import auroraLogo from '../Assets/team-logo/aurora-logo.png';
-import falconsLogo from '../Assets/team-logo/falcons-logo.png';
-import fazeLogo from '../Assets/team-logo/faze-logo.png';
-import furiaLogo from '../Assets/team-logo/furia-logo.png';
-import g2Logo from '../Assets/team-logo/g2-logo.png';
-import painLogo from '../Assets/team-logo/pain-logo.png';
-
-const teamLogos = {
-  'NAVI': naviLogo,
-  'Vitality': vitalityLogo,
-  'MOUZ': mouzLogo,
-  'The Mongolz': mongolzLogo,
-  'Spirit': spiritLogo,
-  'Aurora': auroraLogo,
-  'Falcons': falconsLogo,
-  'FaZe': fazeLogo,
-  'FURIA': furiaLogo,
-  'G2': g2Logo,
-  'Pain': painLogo
-};
+import { TEAM_LOGOS } from '../constants/teamData';
 
 const VideoCard = ({ video, onClick }) => {
-  const team1Logo = teamLogos[video.teams[0]];
-  const team2Logo = teamLogos[video.teams[1]];
+  const team1Logo = TEAM_LOGOS[video.teams[0]];
+  const team2Logo = TEAM_LOGOS[video.teams[1]];
 
   return (
     <div className="video-card" onClick={() => onClick(video)}>

@@ -568,14 +568,14 @@ body {
   color: #ffffff;
 }
 
-.ranking-item.the.mongolz {
+.ranking-item.the-mongolz {
   border-left: none;
   background: #f2b84b;
   color: #231f20;
 }
 
-.ranking-item.the.mongolz .team-name,
-.ranking-item.the.mongolz .points {
+.ranking-item.the-mongolz .team-name,
+.ranking-item.the-mongolz .points {
   color: #231f20;
 }
 
