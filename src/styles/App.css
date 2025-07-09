@@ -840,6 +840,11 @@ body {
     padding: 0 1rem;
   }
   
+  .logo-image {
+    height: 16px;
+    margin-left: -20px;
+  }
+  
   .main {
     padding: 1rem;
   }
@@ -894,6 +899,19 @@ body {
   .team-logo-background {
     width: 300px;
     height: 300px;
+  }
+  
+  .center-divider {
+    width: 6px;
+    left: calc(50% - 3px);
+  }
+  
+  .modal-background-split {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   
   .world-ranking-page {
