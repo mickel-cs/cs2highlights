@@ -842,7 +842,7 @@ body {
   
   .logo-image {
     height: 16px;
-    margin-left: -20px;
+    margin-left: 0;
   }
   
   .main {
