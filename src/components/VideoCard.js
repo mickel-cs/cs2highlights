@@ -1,9 +1,9 @@
 import React from 'react';
-import { TEAM_LOGOS } from '../constants/teamData';
+import { VIDEO_COMPONENT_LOGOS } from '../constants/teamData';
 
 const VideoCard = ({ video, onClick }) => {
-  const team1Logo = TEAM_LOGOS[video.teams[0]];
-  const team2Logo = TEAM_LOGOS[video.teams[1]];
+  const team1Logo = VIDEO_COMPONENT_LOGOS[video.teams[0]];
+  const team2Logo = VIDEO_COMPONENT_LOGOS[video.teams[1]];
 
   return (
     <div className="video-card" onClick={() => onClick(video)}>
