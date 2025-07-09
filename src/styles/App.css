@@ -912,6 +912,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+  }
+  
+  .team-half {
+    flex: 1;
+    width: 50%;
+    max-width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   
   .world-ranking-page {
