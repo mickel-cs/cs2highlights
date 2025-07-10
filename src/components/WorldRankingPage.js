@@ -15,16 +15,16 @@ const topTeams = [
 ];
 
 const topPlayers = [
-  { rank: 1, name: "ZywOo", team: "Vitality", rating: 1.35 },
-  { rank: 2, name: "sh1ro", team: "Cloud9", rating: 1.28 },
-  { rank: 3, name: "donk", team: "Spirit", rating: 1.25 },
-  { rank: 4, name: "m0NESY", team: "G2", rating: 1.22 },
-  { rank: 5, name: "electronic", team: "NAVI", rating: 1.20 },
-  { rank: 6, name: "frozen", team: "MOUZ", rating: 1.18 },
-  { rank: 7, name: "blamef", team: "Astralis", rating: 1.15 },
-  { rank: 8, name: "NiKo", team: "G2", rating: 1.12 },
-  { rank: 9, name: "Ax1Le", team: "Cloud9", rating: 1.10 },
-  { rank: 10, name: "ropz", team: "FaZe", rating: 1.08 }
+  { rank: 1, name: "donk", team: "Spirit", rating: 1.40 },
+  { rank: 2, name: "ZywOo", team: "Vitality", rating: 1.35 },
+  { rank: 3, name: "m0NESY", team: "Falcons", rating: 1.30 },
+  { rank: 4, name: "sh1ro", team: "Spirit", rating: 1.28 },
+  { rank: 5, name: "ropz", team: "Vitality", rating: 1.25 },
+  { rank: 6, name: "Grim", team: "Complexity", rating: 1.22 },
+  { rank: 7, name: "NiKo", team: "Falcons", rating: 1.20 },
+  { rank: 8, name: "XANTARES", team: "Aurora", rating: 1.18 },
+  { rank: 9, name: "flameZ", team: "Vitality", rating: 1.15 },
+  { rank: 10, name: "frozen", team: "FaZe", rating: 1.12 }
 ];
 
 const WorldRankingPage = () => {

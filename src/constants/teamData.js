@@ -11,6 +11,7 @@ import furiaLogo from '../Assets/team-logo/furia-logo.png';
 import g2Logo from '../Assets/team-logo/g2-logo.png';
 import painLogo from '../Assets/team-logo/pain-logo.png';
 import cloud9Logo from '../Assets/team-logo/cloud9-logo.png';
+import complexityLogo from '../Assets/team-logo/complexity-logo.png';
 
 export const TEAM_LOGOS = {
   'NAVI': naviLogo,
@@ -24,7 +25,8 @@ export const TEAM_LOGOS = {
   'FURIA': furiaLogo,
   'G2': g2Logo,
   'Pain': painLogo,
-  'Cloud9': cloud9Logo
+  'Cloud9': cloud9Logo,
+  'Complexity': complexityLogo
 };
 
 export const VIDEO_COMPONENT_LOGOS = {
@@ -39,7 +41,8 @@ export const VIDEO_COMPONENT_LOGOS = {
   'FURIA': furiaLogo,
   'G2': g2Logo,
   'Pain': painLogo,
-  'Cloud9': cloud9Logo
+  'Cloud9': cloud9Logo,
+  'Complexity': complexityLogo
 };
 
 export const BACKGROUND_ANIMATION_LOGOS = {
@@ -54,7 +57,8 @@ export const BACKGROUND_ANIMATION_LOGOS = {
   'FURIA': furiaLogo,
   'G2': g2Logo,
   'Pain': painLogo,
-  'Cloud9': cloud9Logo
+  'Cloud9': cloud9Logo,
+  'Complexity': complexityLogo
 };
 
 export const TEAM_COLORS = {
@@ -68,5 +72,6 @@ export const TEAM_COLORS = {
   'FaZe': '#e43d30',
   'FURIA': '#22006a',
   'G2': '#333333',
-  'Pain': '#ffffff'
+  'Pain': '#ffffff',
+  'Complexity': '#1a1a1a'
 };

@@ -5,6 +5,7 @@ import TournamentsPage from './components/TournamentsPage';
 import WorldRankingPage from './components/WorldRankingPage';
 import './styles/App.css';
 import logoImage from './Assets/Main Logo/major-highlights-logo.png';
+import darkLogoImage from './Assets/Main Logo/major-highlights-dark-logo.png';
 import vitVsMonThumbnail from './Assets/VS/vit-vs-mon.png';
 import painVsMonThumbnail from './Assets/VS/pain-vs-mon.png';
 import vitVsMouzThumbnail from './Assets/VS/vit-vs-mouz.png';
@@ -21,8 +22,8 @@ const finalsVideos = [
     youtubeId: "2GeYxpuibiE",
     teams: ["Vitality", "The Mongolz"],
     duration: "2:34",
-    tournament: "IEM Katowice",
-    description: "Incredible 1v3 clutch on Ancient"
+    tournament: "BLAST.tv Austin Major 2025",
+    description: ""
   }
 ];
 
@@ -34,8 +35,8 @@ const semiFinalsVideos = [
     youtubeId: "eyL5eSv8_6E",
     teams: ["The Mongolz", "Pain"],
     duration: "3:15",
-    tournament: "BLAST Premier",
-    description: "Amazing clutch round"
+    tournament: "BLAST.tv Austin Major 2025",
+    description: ""
   },
   {
     id: 3,
@@ -44,8 +45,8 @@ const semiFinalsVideos = [
     youtubeId: "lCzF89U_hUw",
     teams: ["MOUZ", "Vitality"],
     duration: "3:15",
-    tournament: "BLAST Premier",
-    description: "Amazing clutch round"
+    tournament: "BLAST.tv Austin Major 2025",
+    description: ""
   }
 ];
 
@@ -57,8 +58,8 @@ const quarterFinalsVideos = [
     youtubeId: "3NQG3fgddnk",
     teams: ["The Mongolz", "FaZe"],
     duration: "4:22",
-    tournament: "ESL Pro League",
-    description: "Epic comeback"
+    tournament: "BLAST.tv Austin Major 2025",
+    description: ""
   },
   {
     id: 5,
@@ -67,8 +68,8 @@ const quarterFinalsVideos = [
     youtubeId: "SkmPSdhClww",
     teams: ["NAVI", "G2"],
     duration: "4:22",
-    tournament: "ESL Pro League",
-    description: "Epic comeback"
+    tournament: "BLAST.tv Austin Major 2025",
+    description: ""
   }
 ];
 
@@ -80,8 +81,8 @@ const playoffsVideos = [
     youtubeId: "FpKGsAGwC9E",
     teams: ["Spirit", "MOUZ"],
     duration: "5:10",
-    tournament: "IEM Cologne",
-    description: "Insane clutch moments"
+    tournament: "BLAST.tv Austin Major 2025",
+    description: ""
   },
   {
     id: 7,
@@ -90,8 +91,8 @@ const playoffsVideos = [
     youtubeId: "hbs-sn7x0v0",
     teams: ["FURIA", "Pain"],
     duration: "5:10",
-    tournament: "IEM Cologne",
-    description: "Insane clutch moments"
+    tournament: "BLAST.tv Austin Major 2025",
+    description: ""
   }
 ];
 
@@ -99,6 +100,7 @@ function App() {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('home');
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [visibleSections, setVisibleSections] = useState({
     finals: true,
     semiFinals: true,
@@ -111,6 +113,11 @@ function App() {
     setIsMenuOpen(false);
   };
 
+  const toggleTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+    setIsMenuOpen(false);
+  };
+
   const toggleSection = (section) => {
     setVisibleSections(prev => ({
       ...prev,
@@ -119,11 +126,11 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className={`app ${isDarkTheme ? 'dark-theme' : ''}`}>
       <header className="header">
         <nav className="nav">
           <div className="logo" onClick={() => window.location.reload()}>
-            <img src={logoImage} alt="Major Highlights" className="logo-image" />
+            <img src={isDarkTheme ? darkLogoImage : logoImage} alt="Major Highlights" className="logo-image" />
           </div>
           <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <span></span>
@@ -133,9 +140,11 @@ function App() {
           <ul className={`nav-links mobile ${isMenuOpen ? 'open' : ''}`}>
             <li><a href="#home" onClick={() => handleNavigation('home')}>Home</a></li>
             <li><a href="#tournaments" onClick={() => handleNavigation('tournaments')}>Tournaments</a></li>
-            <li><a href="#world-ranking" onClick={() => handleNavigation('world-ranking')}>World Ranking</a></li>
+            <li><a href="#world-ranking" onClick={() => handleNavigation('world-ranking')}>Ranking</a></li>
+            <li><a href="#theme" onClick={toggleTheme}>{isDarkTheme ? 'Light Mode' : 'Dark Mode'}</a></li>
           </ul>
         </nav>
+        <hr className="footer-separator" />
       </header>
 
       <main className="main">

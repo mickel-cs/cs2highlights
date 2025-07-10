@@ -19,24 +19,153 @@ body {
   overflow-x: hidden;
 }
 
-.app {
+/* Dark Theme Styles */
+.app.dark-theme {
+  background-color: #1a1a1a;
+  color: #e9ecef;
   min-height: 100vh;
 }
 
+body:has(.app.dark-theme) {
+  background-color: #1a1a1a;
+  color: #e9ecef;
+}
+
+.app.dark-theme .header {
+  background: #1a1a1a;
+}
+
+.app.dark-theme .main {
+  background-color: #1a1a1a;
+}
+
+.app.dark-theme .video-card {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+}
+
+.app.dark-theme .vs-container {
+  background: #333333;
+}
+
+.app.dark-theme .team-name-vs {
+  color: #e9ecef;
+}
+
+.app.dark-theme .vs-text {
+  background: #2d2d2d;
+  color: #e9ecef;
+  border: 2px solid #404040;
+}
+
+.app.dark-theme .video-card:hover .vs-text {
+  background: #f8f9fa;
+  color: #231f20;
+  border-color: #f8f9fa;
+}
+
+.app.dark-theme .date-button {
+  background: #404040;
+  border: 1px solid #404040;
+  color: #e9ecef;
+}
+
+.app.dark-theme .date-button:hover {
+  background: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #231f20;
+}
+
+.app.dark-theme .footer-separator {
+  background: #404040;
+}
+
+.app.dark-theme .footer-contact {
+  color: #e9ecef;
+}
+
+.app.dark-theme .nav-links.mobile {
+  background: #2d2d2d;
+  border-top: 1px solid #404040;
+}
+
+.app.dark-theme .nav-links a {
+  color: #e9ecef;
+}
+
+.app.dark-theme .nav-links a:hover {
+  color: #ff6b35;
+}
+
+.app.dark-theme .hamburger span {
+  background: #e9ecef;
+}
+
+.app.dark-theme .world-ranking-page {
+  color: #e9ecef;
+}
+
+.app.dark-theme .ranking-container {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+}
+
+.app.dark-theme .tab-button {
+  background: #404040;
+  border: 1px solid #404040;
+  color: #e9ecef;
+}
+
+.app.dark-theme .tab-button:hover {
+  background: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #231f20;
+}
+
+/* Only override generic ranking items, not team-specific ones */
+.app.dark-theme .ranking-item:not([class*="navi"]):not([class*="vitality"]):not([class*="mouz"]):not([class*="mongolz"]):not([class*="spirit"]):not([class*="aurora"]):not([class*="falcons"]):not([class*="faze"]):not([class*="furia"]):not([class*="g2"]) {
+  background: #333333;
+}
+
+.app.dark-theme .ranking-item:not([class*="navi"]):not([class*="vitality"]):not([class*="mouz"]):not([class*="mongolz"]):not([class*="spirit"]):not([class*="aurora"]):not([class*="falcons"]):not([class*="faze"]):not([class*="furia"]):not([class*="g2"]):hover {
+  background: #404040;
+}
+
+/* Only override generic player items, not team-specific ones */
+.app.dark-theme .player-item:not([class*="vitality"]):not([class*="spirit"]):not([class*="g2"]):not([class*="navi"]):not([class*="mouz"]):not([class*="astralis"]):not([class*="faze"]):not([class*="falcons"]):not([class*="cloud9"]):not([class*="aurora"]):not([class*="complexity"]) {
+  background: #333333;
+}
+
+.app.dark-theme .player-item:not([class*="vitality"]):not([class*="spirit"]):not([class*="g2"]):not([class*="navi"]):not([class*="mouz"]):not([class*="astralis"]):not([class*="faze"]):not([class*="falcons"]):not([class*="cloud9"]):not([class*="aurora"]):not([class*="complexity"]):hover {
+  background: #404040;
+}
+
+.app.dark-theme .tournaments-page {
+  background-color: #1a1a1a;
+  color: #e9ecef;
+}
+
+
+
 .header {
-  background: #ffffff;
-  border-bottom: 1px solid #e9ecef;
-  padding: 1rem 0;
+  background: #f8f9fa;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav {
+  padding: 1rem 2rem;
+}
+
+.header .footer-separator {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .nav {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -531,8 +660,7 @@ body {
   padding: 1rem;
   background: #f8f9fa;
   border-radius: 6px;
-  border: 1px solid #e9ecef;
-  border-left: 8px solid #dee2e6;
+  border: none;
   transition: all 0.2s;
 }
 
@@ -542,12 +670,10 @@ body {
 }
 
 .ranking-item.navi {
-  border-left: none;
   background: #f5e933;
 }
 
 .ranking-item.vitality {
-  border-left: none;
   background: #231f20;
   color: #ffffff;
 }
@@ -558,7 +684,6 @@ body {
 }
 
 .ranking-item.mouz {
-  border-left: none;
   background: #ff0000;
   color: #ffffff;
 }
@@ -569,7 +694,6 @@ body {
 }
 
 .ranking-item.the-mongolz {
-  border-left: none;
   background: #f2b84b;
   color: #231f20;
 }
@@ -580,7 +704,6 @@ body {
 }
 
 .ranking-item.spirit {
-  border-left: none;
   background: #000000;
   color: #ffffff;
 }
@@ -591,7 +714,6 @@ body {
 }
 
 .ranking-item.aurora {
-  border-left: none;
   background: #00ffff;
   color: #000000;
 }
@@ -602,7 +724,6 @@ body {
 }
 
 .ranking-item.falcons {
-  border-left: none;
   background: #01be6e;
   color: #ffffff;
 }
@@ -613,7 +734,6 @@ body {
 }
 
 .ranking-item.faze {
-  border-left: none;
   background: #e43d30;
   color: #ffffff;
 }
@@ -624,7 +744,6 @@ body {
 }
 
 .ranking-item.furia {
-  border-left: none;
   background: #22006a;
   color: #ffffff;
 }
@@ -635,7 +754,6 @@ body {
 }
 
 .ranking-item.g2 {
-  border-left: none;
   background: #333333;
   color: #ffffff;
 }
@@ -686,7 +804,7 @@ body {
   padding: 1rem;
   background: #f8f9fa;
   border-radius: 6px;
-  border: 1px solid #e9ecef;
+  border: none;
   transition: all 0.2s;
 }
 
@@ -789,6 +907,93 @@ body {
 .player-item.faze .player-team,
 .player-item.faze .player-rating {
   color: #ffffff;
+}
+
+.player-item.falcons {
+  background: #01be6e;
+  color: #ffffff;
+}
+
+.player-item.falcons .rank-number,
+.player-item.falcons .player-name,
+.player-item.falcons .player-team,
+.player-item.falcons .player-rating {
+  color: #ffffff;
+}
+
+.player-item.cloud9 {
+  background: #0066cc;
+  color: #ffffff;
+}
+
+.player-item.cloud9 .rank-number,
+.player-item.cloud9 .player-name,
+.player-item.cloud9 .player-team,
+.player-item.cloud9 .player-rating {
+  color: #ffffff;
+}
+
+/* Ensure Cloud9 styling works in dark mode */
+.app.dark-theme .player-item.cloud9 {
+  background: #0066cc !important;
+  color: #ffffff !important;
+}
+
+.app.dark-theme .player-item.cloud9 .rank-number,
+.app.dark-theme .player-item.cloud9 .player-name,
+.app.dark-theme .player-item.cloud9 .player-team,
+.app.dark-theme .player-item.cloud9 .player-rating {
+  color: #ffffff !important;
+}
+
+.player-item.aurora {
+  background: #00ffff;
+  color: #000000;
+}
+
+.player-item.aurora .rank-number,
+.player-item.aurora .player-name,
+.player-item.aurora .player-team,
+.player-item.aurora .player-rating {
+  color: #000000;
+}
+
+/* Ensure Aurora styling works in dark mode */
+.app.dark-theme .player-item.aurora {
+  background: #00ffff !important;
+  color: #000000 !important;
+}
+
+.app.dark-theme .player-item.aurora .rank-number,
+.app.dark-theme .player-item.aurora .player-name,
+.app.dark-theme .player-item.aurora .player-team,
+.app.dark-theme .player-item.aurora .player-rating {
+  color: #000000 !important;
+}
+
+.player-item.complexity {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.player-item.complexity .rank-number,
+.player-item.complexity .player-name,
+.player-item.complexity .player-team,
+.player-item.complexity .player-rating {
+  color: #ffffff;
+}
+
+/* Ensure Complexity styling works in dark mode */
+.app.dark-theme .player-item.complexity {
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.app.dark-theme .player-item.complexity .rank-number,
+.app.dark-theme .player-item.complexity .player-name,
+.app.dark-theme .player-item.complexity .player-team,
+.app.dark-theme .player-item.complexity .player-rating {
+  color: #ffffff !important;
 }
 
 .rank-number {
