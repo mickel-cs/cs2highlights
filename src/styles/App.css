@@ -32,7 +32,8 @@ body:has(.app.dark-theme) {
 }
 
 .app.dark-theme .header {
-  background: #1a1a1a;
+  background: #2d2d2d;
+  border-bottom: 1px solid #404040;
 }
 
 .app.dark-theme .main {
@@ -148,26 +149,23 @@ body:has(.app.dark-theme) {
 
 
 .header {
-  background: #f8f9fa;
+  background: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+
+
+
 
 .nav {
-  padding: 1rem 2rem;
-}
-
-.header .footer-separator {
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
   padding: 0 2rem;
-  box-sizing: border-box;
-}
-
-.nav {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

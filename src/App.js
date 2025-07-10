@@ -144,7 +144,6 @@ function App() {
             <li><a href="#theme" onClick={toggleTheme}>{isDarkTheme ? 'Light Mode' : 'Dark Mode'}</a></li>
           </ul>
         </nav>
-        <hr className="footer-separator" />
       </header>
 
       <main className="main">
