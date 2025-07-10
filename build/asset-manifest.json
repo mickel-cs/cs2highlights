@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/major-highlights/static/css/main.25618097.css",
-    "main.js": "/major-highlights/static/js/main.4e508434.js",
+    "main.css": "/major-highlights/static/css/main.db845d63.css",
+    "main.js": "/major-highlights/static/js/main.da2ed62e.js",
     "static/media/mongolz-logo.png": "/major-highlights/static/media/mongolz-logo.5a94ec17ad5e65e94ff9.png",
     "static/media/vit-vs-mon.png": "/major-highlights/static/media/vit-vs-mon.f6d3a86d64aa10dd43e7.png",
     "static/media/cloud9-logo.png": "/major-highlights/static/media/cloud9-logo.ff1912a14b8943f6029c.png",
@@ -15,6 +15,7 @@
     "static/media/furia-logo.png": "/major-highlights/static/media/furia-logo.93b40cecf2d04db4fd7f.png",
     "static/media/pain-vs-furia.png": "/major-highlights/static/media/pain-vs-furia.55d9eb4e40789d5d0b52.png",
     "static/media/spirit-vs-mouz.png": "/major-highlights/static/media/spirit-vs-mouz.1d2e158c2808a3221eab.png",
+    "static/media/complexity-logo.png": "/major-highlights/static/media/complexity-logo.846d1d22f63c29bf3ba6.png",
     "static/media/vitality-logo.png": "/major-highlights/static/media/vitality-logo.e6146c4d5202c5e8ba9e.png",
     "static/media/High Speed.ttf": "/major-highlights/static/media/High Speed.cae45ea604baacad596a.ttf",
     "static/media/navi-logo.png": "/major-highlights/static/media/navi-logo.7df4b760843a806f321f.png",
@@ -24,11 +25,11 @@
     "static/media/pain-logo.png": "/major-highlights/static/media/pain-logo.eb92c38c3fe568c99f84.png",
     "static/media/mouz-logo.png": "/major-highlights/static/media/mouz-logo.48f66d8763adefa39602.png",
     "index.html": "/major-highlights/index.html",
-    "main.25618097.css.map": "/major-highlights/static/css/main.25618097.css.map",
-    "main.4e508434.js.map": "/major-highlights/static/js/main.4e508434.js.map"
+    "main.db845d63.css.map": "/major-highlights/static/css/main.db845d63.css.map",
+    "main.da2ed62e.js.map": "/major-highlights/static/js/main.da2ed62e.js.map"
   },
   "entrypoints": [
-    "static/css/main.25618097.css",
-    "static/js/main.4e508434.js"
+    "static/css/main.db845d63.css",
+    "static/js/main.da2ed62e.js"
   ]
 }
