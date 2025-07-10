@@ -1181,3 +1181,45 @@ body:has(.app.dark-theme) {
     font-size: 0.9rem;
   }
 }
+
+/* Mobile Landscape Optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+  .date-sections {
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .date-section {
+    min-width: 280px;
+    flex-shrink: 0;
+  }
+  
+  .date-header {
+    margin-bottom: 1rem;
+  }
+  
+  .vs-container {
+    height: 120px;
+    padding: 0.5rem;
+  }
+  
+  .vs-team-logo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .team-name-vs {
+    font-size: 0.65rem;
+  }
+  
+  .vs-text {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .main {
+    padding: 1rem 0.5rem;
+  }
+}

@@ -1,9 +1,17 @@
 import React from 'react';
-import { VIDEO_COMPONENT_LOGOS } from '../constants/teamData';
+import { VIDEO_COMPONENT_LOGOS, TEAM_LOGOS } from '../constants/teamData';
+import spiritLogo from '../Assets/team-logo/spirit-logo.png';
 
-const VideoCard = ({ video, onClick }) => {
-  const team1Logo = VIDEO_COMPONENT_LOGOS[video.teams[0]];
-  const team2Logo = VIDEO_COMPONENT_LOGOS[video.teams[1]];
+const VideoCard = ({ video, onClick, isDarkTheme }) => {
+  const getTeamLogo = (teamName) => {
+    if (teamName === 'Spirit' && isDarkTheme) {
+      return spiritLogo;
+    }
+    return VIDEO_COMPONENT_LOGOS[teamName];
+  };
+  
+  const team1Logo = getTeamLogo(video.teams[0]);
+  const team2Logo = getTeamLogo(video.teams[1]);
 
   return (
     <div className="video-card" onClick={() => onClick(video)}>

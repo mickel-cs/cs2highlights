@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/major-highlights/static/css/main.5c8bc340.css",
-    "main.js": "/major-highlights/static/js/main.da2ed62e.js",
+    "main.css": "/major-highlights/static/css/main.34cf92f2.css",
+    "main.js": "/major-highlights/static/js/main.fbe6e7e6.js",
     "static/media/mongolz-logo.png": "/major-highlights/static/media/mongolz-logo.5a94ec17ad5e65e94ff9.png",
     "static/media/vit-vs-mon.png": "/major-highlights/static/media/vit-vs-mon.f6d3a86d64aa10dd43e7.png",
     "static/media/cloud9-logo.png": "/major-highlights/static/media/cloud9-logo.ff1912a14b8943f6029c.png",
@@ -25,11 +25,11 @@
     "static/media/pain-logo.png": "/major-highlights/static/media/pain-logo.eb92c38c3fe568c99f84.png",
     "static/media/mouz-logo.png": "/major-highlights/static/media/mouz-logo.48f66d8763adefa39602.png",
     "index.html": "/major-highlights/index.html",
-    "main.5c8bc340.css.map": "/major-highlights/static/css/main.5c8bc340.css.map",
-    "main.da2ed62e.js.map": "/major-highlights/static/js/main.da2ed62e.js.map"
+    "main.34cf92f2.css.map": "/major-highlights/static/css/main.34cf92f2.css.map",
+    "main.fbe6e7e6.js.map": "/major-highlights/static/js/main.fbe6e7e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c8bc340.css",
-    "static/js/main.da2ed62e.js"
+    "static/css/main.34cf92f2.css",
+    "static/js/main.fbe6e7e6.js"
   ]
 }

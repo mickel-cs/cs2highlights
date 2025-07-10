@@ -168,6 +168,7 @@ function App() {
                         key={video.id}
                         video={video}
                         onClick={setSelectedVideo}
+                        isDarkTheme={isDarkTheme}
                       />
                     ))}
                   </div>
