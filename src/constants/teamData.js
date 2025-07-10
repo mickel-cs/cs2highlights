@@ -42,6 +42,21 @@ export const VIDEO_COMPONENT_LOGOS = {
   'Cloud9': cloud9Logo
 };
 
+export const BACKGROUND_ANIMATION_LOGOS = {
+  'NAVI': naviLogo,
+  'Vitality': vitalityLogo,
+  'MOUZ': mouzLogo,
+  'The Mongolz': mongolzLogo,
+  'Spirit': spiritLogo,
+  'Aurora': auroraLogo,
+  'Falcons': falconsLogo,
+  'FaZe': fazeLogo,
+  'FURIA': furiaLogo,
+  'G2': g2Logo,
+  'Pain': painLogo,
+  'Cloud9': cloud9Logo
+};
+
 export const TEAM_COLORS = {
   'NAVI': '#f5e933',
   'Vitality': '#231f20',
