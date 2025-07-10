@@ -1182,41 +1182,57 @@ body:has(.app.dark-theme) {
   }
 }
 
-/* Mobile Landscape - Force Mobile Layout */
-@media (max-width: 768px) and (orientation: landscape) {
+/* Force Mobile Layout in Landscape - Override Everything */
+@media (max-width: 768px) and (orientation: landscape),
+       (max-height: 500px) and (max-width: 900px) and (orientation: landscape) {
   .date-sections {
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: column !important;
+    gap: 2rem !important;
   }
   
   .date-section {
-    width: 100%;
+    width: 100% !important;
   }
   
   .video-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  .video-card {
+    width: 100% !important;
+    max-width: none !important;
   }
   
   .vs-container {
-    height: 140px;
-    padding: 0.75rem;
+    height: 140px !important;
+    padding: 0.75rem !important;
   }
   
   .vs-team-logo {
-    width: 45px;
-    height: 45px;
+    width: 45px !important;
+    height: 45px !important;
   }
   
   .team-name-vs {
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
   
   .vs-text {
-    font-size: 1rem;
-    padding: 0.4rem 0.8rem;
+    font-size: 1rem !important;
+    padding: 0.4rem 0.8rem !important;
   }
   
   .main {
-    padding: 1rem;
+    padding: 1rem !important;
+  }
+  
+  .nav {
+    padding: 0 1rem !important;
+  }
+  
+  .date-button {
+    font-size: 0.9rem !important;
+    padding: 0.5rem 1rem !important;
   }
 }
