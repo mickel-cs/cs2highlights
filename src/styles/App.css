@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Kabel Ultra';
+  src: url('../Assets/fonts/Kabel Ultra Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -102,6 +109,10 @@ body:has(.app.dark-theme) {
   background: #e9ecef;
 }
 
+.app.dark-theme .logo-text {
+  color: #e9ecef;
+}
+
 .app.dark-theme .world-ranking-page {
   color: #e9ecef;
 }
@@ -163,8 +174,8 @@ body:has(.app.dark-theme) {
 
 
 .nav {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -172,16 +183,15 @@ body:has(.app.dark-theme) {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ff6b35;
   cursor: pointer;
 }
 
-.logo-image {
-  height: 19px;
-  width: auto;
-  margin-left: -30px;
+.logo-text {
+  font-family: 'Kabel Ultra', sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #231f20;
+  letter-spacing: 1px;
 }
 
 .hamburger {
@@ -255,7 +265,7 @@ body:has(.app.dark-theme) {
 
 .main {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem 2rem 1rem 2rem;
   box-sizing: border-box;
 }
@@ -590,7 +600,7 @@ body:has(.app.dark-theme) {
   padding: 0 0.25rem 2rem 2rem;
   color: #231f20;
   font-size: 0.9rem;
-  font-family: 'High Speed', sans-serif;
+  font-family: 'Kabel Ultra', sans-serif;
 }
 
 .footer-contact p {
@@ -1045,9 +1055,8 @@ body:has(.app.dark-theme) {
     padding: 0 1rem;
   }
   
-  .logo-image {
-    height: 16px;
-    margin-left: 0;
+  .logo-text {
+    font-size: 1rem;
   }
   
   .main {

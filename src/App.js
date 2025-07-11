@@ -4,8 +4,7 @@ import VideoModal from './components/VideoModal';
 import TournamentsPage from './components/TournamentsPage';
 import WorldRankingPage from './components/WorldRankingPage';
 import './styles/App.css';
-import logoImage from './Assets/Main Logo/major-highlights-logo.png';
-import darkLogoImage from './Assets/Main Logo/major-highlights-dark-logo.png';
+
 import vitVsMonThumbnail from './Assets/VS/vit-vs-mon.png';
 import painVsMonThumbnail from './Assets/VS/pain-vs-mon.png';
 import vitVsMouzThumbnail from './Assets/VS/vit-vs-mouz.png';
@@ -130,7 +129,7 @@ function App() {
       <header className="header">
         <nav className="nav">
           <div className="logo" onClick={() => window.location.reload()}>
-            <img src={isDarkTheme ? darkLogoImage : logoImage} alt="Major Highlights" className="logo-image" />
+            <span className="logo-text">CS2 HIGHLIGHTS</span>
           </div>
           <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <span></span>
