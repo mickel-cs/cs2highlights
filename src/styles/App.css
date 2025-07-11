@@ -190,6 +190,9 @@ body:has(.app.dark-theme) {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 262px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tournament-card:hover {
@@ -237,27 +240,27 @@ body:has(.app.dark-theme) {
 }
 
 .tournament-status.completed {
-  background: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
+  background: #231f20;
+  color: #ffffff;
+  border: 1px solid #231f20;
 }
 
 .tournament-status.upcoming {
-  background: #fff3cd;
-  color: #856404;
-  border: 1px solid #ffeaa7;
+  background: #495057;
+  color: #ffffff;
+  border: 1px solid #495057;
 }
 
 .app.dark-theme .tournament-status.completed {
-  background: #155724;
-  color: #d4edda;
-  border-color: #28a745;
+  background: #404040;
+  color: #e9ecef;
+  border-color: #404040;
 }
 
 .app.dark-theme .tournament-status.upcoming {
-  background: #856404;
-  color: #fff3cd;
-  border-color: #ffc107;
+  background: #f8f9fa;
+  color: #231f20;
+  border-color: #f8f9fa;
 }
 
 .tournament-details {
@@ -282,6 +285,51 @@ body:has(.app.dark-theme) {
 
 .app.dark-theme .tournament-details strong {
   color: #e9ecef;
+}
+
+.tournament-card.iem-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tournament-card.iem-card .tournament-bg {
+  height: 30%;
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tournament-card.iem-card .tournament-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0);
+}
+
+
+
+.tournament-card.iem-card .tournament-info {
+  height: 70%;
+  padding: 1rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app.dark-theme .tournament-card.iem-card .tournament-info {
+  background: #2d2d2d;
+}
+
+.tournaments-grid .date-header {
+  margin-bottom: 1rem;
 }
 
 .tournament-detail {
