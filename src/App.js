@@ -182,8 +182,8 @@ function App() {
         
         <hr className="footer-separator" />
         <div className="footer-contact">
-          <p>@MHGG</p>
-          <p>MAJOR.HIGHLIGHTS@GMAIL.COM</p>
+          <p>@CS2HIGHLIGHTS</p>
+          <p>CS2HIGHLIGHTS.COM</p>
         </div>
       </main>
 
