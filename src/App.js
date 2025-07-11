@@ -69,10 +69,7 @@ const quarterFinalsVideos = [
     duration: "4:22",
     tournament: "BLAST.tv Austin Major 2025",
     description: ""
-  }
-];
-
-const playoffsVideos = [
+  },
   {
     id: 6,
     title: "Spirit VS MOUZ",
@@ -103,8 +100,7 @@ function App() {
   const [visibleSections, setVisibleSections] = useState({
     finals: true,
     semiFinals: true,
-    quarterFinals: true,
-    playoffs: true
+    quarterFinals: true
   });
 
   const handleNavigation = (page) => {
@@ -151,8 +147,7 @@ function App() {
             {[
               { key: 'finals', title: 'AUSTIN // FINALS', videos: finalsVideos },
               { key: 'semiFinals', title: 'AUSTIN // SEMI FINALS', videos: semiFinalsVideos },
-              { key: 'quarterFinals', title: 'AUSTIN // QUARTER FINALS', videos: quarterFinalsVideos },
-              { key: 'playoffs', title: 'AUSTIN // PLAYOFFS', videos: playoffsVideos }
+              { key: 'quarterFinals', title: 'AUSTIN // QUARTER FINALS', videos: quarterFinalsVideos }
             ].map(section => (
               <div key={section.key} className="date-section">
                 <div className="date-header">
