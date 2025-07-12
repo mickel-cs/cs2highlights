@@ -134,7 +134,7 @@ function App() {
           </div>
           <ul className={`nav-links mobile ${isMenuOpen ? 'open' : ''}`}>
             <li><a href="#home" onClick={() => handleNavigation('home')}>Home</a></li>
-            <li><a href="#tournaments" onClick={() => handleNavigation('tournaments')}>Tournaments</a></li>
+            <li><a href="#tournaments" onClick={() => handleNavigation('tournaments')}>Events</a></li>
             <li><a href="#world-ranking" onClick={() => handleNavigation('world-ranking')}>Ranking</a></li>
             <li><a href="#theme" onClick={toggleTheme}>{isDarkTheme ? 'Light Mode' : 'Dark Mode'}</a></li>
           </ul>
