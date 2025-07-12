@@ -1582,11 +1582,18 @@ body:has(.app.dark-theme) {
   }
 }
 
+/* Mobile-specific: Reverse homepage video grid order */
+@media (max-width: 768px) {
+  .date-sections {
+    flex-direction: column-reverse;
+  }
+}
+
 /* Force Mobile Layout in Landscape - Override Everything */
 @media (max-width: 768px) and (orientation: landscape),
        (max-height: 500px) and (max-width: 900px) and (orientation: landscape) {
   .date-sections {
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     gap: 2rem !important;
   }
   

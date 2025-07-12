@@ -35,15 +35,15 @@ const AustinTournament = ({ onBack }) => {
     <div className="tournament-detail">
       <h1>BLAST.tv Austin Major 2025</h1>
       <div className="tournament-bracket">
+        <div className="champion">
+          <div className="champion-trophy">🏆</div>
+          <div className="champion-team">
+            <TeamLogo teamName={bracketData.finals.match.winner} className="champion-logo" />
+            <span className="champion-name">{bracketData.finals.match.winner}</span>
+          </div>
+        </div>
         <div className="bracket-round">
           <h3>Finals</h3>
-          <div className="champion">
-            <div className="champion-trophy">🏆</div>
-            <div className="champion-team">
-              <TeamLogo teamName={bracketData.finals.match.winner} className="champion-logo" />
-              <span className="champion-name">{bracketData.finals.match.winner}</span>
-            </div>
-          </div>
           <div className="bracket-matches">
             <BracketMatch match={bracketData.finals.match} isWinner={true} />
           </div>
