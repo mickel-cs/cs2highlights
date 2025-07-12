@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f018758.css",
+    "main.js": "/static/js/main.974f612d.js",
+    "static/media/iem-card-bg.png": "/static/media/iem-card-bg.0df7340165318a32a379.png",
+    "static/media/mongolz-logo.png": "/static/media/mongolz-logo.5a94ec17ad5e65e94ff9.png",
+    "static/media/vit-vs-mon.png": "/static/media/vit-vs-mon.f6d3a86d64aa10dd43e7.png",
+    "static/media/cloud9-logo.png": "/static/media/cloud9-logo.ff1912a14b8943f6029c.png",
+    "static/media/mon-vs-faze.png": "/static/media/mon-vs-faze.66a442c1bcb30dc20dad.png",
+    "static/media/vit-vs-navi.png": "/static/media/vit-vs-navi.23b16ae48a776a34c96f.png",
+    "static/media/pain-vs-mon.png": "/static/media/pain-vs-mon.22bfa579d1f557ae75f0.png",
+    "static/media/g2-logo.png": "/static/media/g2-logo.925707f8d52f7191a7a5.png",
+    "static/media/vit-vs-mouz.png": "/static/media/vit-vs-mouz.4cd606909ddee5c0460c.png",
+    "static/media/aurora-logo.png": "/static/media/aurora-logo.dfc242aebd0ecff105eb.png",
+    "static/media/falcons-logo.png": "/static/media/falcons-logo.ee770afeb3d9b51ea3e9.png",
+    "static/media/furia-logo.png": "/static/media/furia-logo.93b40cecf2d04db4fd7f.png",
+    "static/media/blast-card.bg.jpg": "/static/media/blast-card.bg.332d22c151e0431268fe.jpg",
+    "static/media/pain-vs-furia.png": "/static/media/pain-vs-furia.55d9eb4e40789d5d0b52.png",
+    "static/media/spirit-vs-mouz.png": "/static/media/spirit-vs-mouz.1d2e158c2808a3221eab.png",
+    "static/media/complexity-logo.png": "/static/media/complexity-logo.846d1d22f63c29bf3ba6.png",
+    "static/media/Kabel Ultra Regular.ttf": "/static/media/Kabel Ultra Regular.584abd6c20c30ca934b8.ttf",
+    "static/media/vitality-logo.png": "/static/media/vitality-logo.e6146c4d5202c5e8ba9e.png",
+    "static/media/High Speed.ttf": "/static/media/High Speed.cae45ea604baacad596a.ttf",
+    "static/media/navi-logo.png": "/static/media/navi-logo.7df4b760843a806f321f.png",
+    "static/media/spirit-dark-logo.png": "/static/media/spirit-dark-logo.b37cf62dd417fd4f9039.png",
+    "static/media/spirit-logo.png": "/static/media/spirit-logo.95503fd1f7dc7e290808.png",
+    "static/media/faze-logo.png": "/static/media/faze-logo.4297cae70daae53c82da.png",
+    "static/media/pain-logo.png": "/static/media/pain-logo.eb92c38c3fe568c99f84.png",
+    "static/media/mouz-logo.png": "/static/media/mouz-logo.48f66d8763adefa39602.png",
+    "index.html": "/index.html",
+    "main.2f018758.css.map": "/static/css/main.2f018758.css.map",
+    "main.974f612d.js.map": "/static/js/main.974f612d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f018758.css",
+    "static/js/main.974f612d.js"
+  ]
+}

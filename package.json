@@ -2,7 +2,7 @@
   "name": "cs2highlights",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://mickel-cs.github.io/cs2highlights",
+  "homepage": "https://cs2highlights.com",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
