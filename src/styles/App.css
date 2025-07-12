@@ -523,6 +523,12 @@ body:has(.app.dark-theme) {
   .bracket-round {
     width: 100%;
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bracket-round:last-child {
+    flex-direction: column-reverse;
   }
   
   .tournaments-page h1,
