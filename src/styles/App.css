@@ -528,7 +528,19 @@ body:has(.app.dark-theme) {
   }
   
   .bracket-round:last-child {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  
+  .bracket-round:last-child .champion {
+    order: -2;
+  }
+  
+  .bracket-round:last-child h3 {
+    order: -1;
+  }
+  
+  .bracket-round:last-child .bracket-matches {
+    order: 0;
   }
   
   .tournaments-page h1,
