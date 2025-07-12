@@ -145,9 +145,9 @@ function App() {
         {currentPage === 'home' && (
           <div className="date-sections">
             {[
-              { key: 'quarterFinals', title: 'AUSTIN // QUARTER FINALS', videos: quarterFinalsVideos },
-              { key: 'semiFinals', title: 'AUSTIN // SEMI FINALS', videos: semiFinalsVideos },
-              { key: 'finals', title: 'AUSTIN // FINALS', videos: finalsVideos }
+              { key: 'quarterFinals', title: 'AUSTIN QUARTER FINALS', videos: quarterFinalsVideos },
+              { key: 'semiFinals', title: 'AUSTIN SEMI FINALS', videos: semiFinalsVideos },
+              { key: 'finals', title: 'AUSTIN FINALS', videos: finalsVideos }
             ].map(section => (
               <div key={section.key} className="date-section">
                 <div className="date-header">
