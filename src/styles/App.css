@@ -537,6 +537,7 @@ body:has(.app.dark-theme) {
   
   .bracket-round:last-child h3 {
     order: -1;
+    margin-top: 1rem;
   }
   
   .bracket-round:last-child .bracket-matches {
