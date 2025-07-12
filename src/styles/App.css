@@ -515,7 +515,7 @@ body:has(.app.dark-theme) {
 
 @media (max-width: 768px) {
   .tournament-bracket {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 2rem;
   }
