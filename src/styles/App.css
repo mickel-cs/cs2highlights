@@ -1172,14 +1172,15 @@ body:has(.app.dark-theme) {
   color: #ffffff;
 }
 
-.ranking-item.g2 {
-  background: #333333;
-  color: #ffffff;
+.ranking-item.pain {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
 }
 
-.ranking-item.g2 .team-name,
-.ranking-item.g2 .points {
-  color: #ffffff;
+.ranking-item.pain .team-name,
+.ranking-item.pain .points {
+  color: #000000;
 }
 
 .logo-container {

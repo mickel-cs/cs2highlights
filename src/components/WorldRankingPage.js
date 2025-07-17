@@ -7,11 +7,11 @@ const topTeams = [
   { rank: 3, name: "The Mongolz", points: 900, players: ["bLitz", "Techno4K", "910", "sk0R", "mzinho"] },
   { rank: 4, name: "Spirit", points: 850, players: ["donk", "Zweih", "sh1ro", "zont1x", "chopper"] },
   { rank: 5, name: "Aurora", points: 800, players: ["deko", "clax", "gr1ks", "kensi", "Forester"] },
-  { rank: 6, name: "NAVI", points: 750, players: ["Aleksib", "jL", "b1t", "w0nderful", "iM"] },
-  { rank: 7, name: "Falcons", points: 700, players: ["snappi", "SunPayus", "dupreeh", "Maden", "MAGISK"] },
+  { rank: 6, name: "Falcons", points: 750, players: ["snappi", "SunPayus", "dupreeh", "Maden", "MAGISK"] },
+  { rank: 7, name: "NAVI", points: 700, players: ["Aleksib", "jL", "b1t", "w0nderful", "iM"] },
   { rank: 8, name: "FaZe", points: 650, players: ["karrigan", "rain", "frozen", "ropz", "broky"] },
   { rank: 9, name: "FURIA", points: 600, players: ["arT", "yuurih", "KSCERATO", "skullz", "chelo"] },
-  { rank: 10, name: "G2", points: 550, players: ["HooXi", "m0NESY", "NiKo", "huNter-", "nexa"] }
+  { rank: 10, name: "Pain", points: 550, players: ["biguzera", "lux", "nqz", "snow", "TMB"] }
 ];
 
 const topPlayers = [

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f018758.css",
-    "main.js": "/static/js/main.974f612d.js",
+    "main.css": "/static/css/main.e1257efd.css",
+    "main.js": "/static/js/main.0ce01957.js",
     "static/media/iem-card-bg.png": "/static/media/iem-card-bg.0df7340165318a32a379.png",
     "static/media/mongolz-logo.png": "/static/media/mongolz-logo.5a94ec17ad5e65e94ff9.png",
     "static/media/vit-vs-mon.png": "/static/media/vit-vs-mon.f6d3a86d64aa10dd43e7.png",
@@ -28,11 +28,11 @@
     "static/media/pain-logo.png": "/static/media/pain-logo.eb92c38c3fe568c99f84.png",
     "static/media/mouz-logo.png": "/static/media/mouz-logo.48f66d8763adefa39602.png",
     "index.html": "/index.html",
-    "main.2f018758.css.map": "/static/css/main.2f018758.css.map",
-    "main.974f612d.js.map": "/static/js/main.974f612d.js.map"
+    "main.e1257efd.css.map": "/static/css/main.e1257efd.css.map",
+    "main.0ce01957.js.map": "/static/js/main.0ce01957.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f018758.css",
-    "static/js/main.974f612d.js"
+    "static/css/main.e1257efd.css",
+    "static/js/main.0ce01957.js"
   ]
 }
